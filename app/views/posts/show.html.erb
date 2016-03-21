@@ -9,8 +9,16 @@
 	<p class="body">
 		<%= @post.body %>
 	</p>
+
+	<div id="comments">
+		<h2><%= pluralize @post.comments.count,"Comment" %></h2>
+		<%= render @post.comments %>
+
+		<h3>Add a Comment</h3>
+		<%= render "comments/form" %>
+	</div>
 	<div class="buttons">
 		<button class="button"><%=link_to "Edit", edit_post_path %></button>
-		<buttton class="button"><%= link_to "Delete", @post, method: :delete, confirm: "Are you Sure?" %></buttton>
+		<buttton class="button"><%= link_to "Delete", @post, method: :delete,:data=>{confirm: "Are you sure?"} %></buttton>
 	</div>
 </div>
