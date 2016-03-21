@@ -18,20 +18,26 @@
 	<ul>
 		 <li class="category">Website</li>
 	   	 <li><%= link_to "Blog", root_path %></li>
-		 <li><About</li>
+		 <li><%= link_to "About", about_path%></li>
 	</ul>	
 	<ul>
 		<li class="category">Social</li>
-		<li>Twitter</li>
-		<li>Facebook</li>
-		<li>Github</li>	
+		<li><%= link_to "Twitter","https://twitter.com/cayadav"%></li>
+		<li><%= link_to "Facebook","https://www.facebook.com/cayadav2009"%></li>
+		<li><%= link_to "Github","https://github.com/BelieveC"%></li>	
 
 		<p class="sign_in">Sign_In</p>
 	</ul>
 </div>
 <div id="main_content">
 	<div id="header">
-		<p>All Post</p>
+		<% if current_page?(root_path)%>
+			<p>News Feed</p>
+		<% elsif current_page?(about_path)%>
+			<p>About</p>
+		<% else %>
+			<p><%= link_to "News Feed", root_path%></p>
+		<% end%>
 		<div class="buttons">
 			<button class="button"><%= link_to "New Post", new_post_path%></button>
 			<button class="button">LogOut</button>
