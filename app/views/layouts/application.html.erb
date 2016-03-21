@@ -25,8 +25,9 @@
 		<li><%= link_to "Twitter","https://twitter.com/cayadav"%></li>
 		<li><%= link_to "Facebook","https://www.facebook.com/cayadav2009"%></li>
 		<li><%= link_to "Github","https://github.com/BelieveC"%></li>	
-
-		<p class="sign_in">Sign_In</p>
+		<% if !user_signed_in? %>
+			<p class="sign_in"><%= link_to "Sign-In",new_user_session_path %></p>
+		<% end %>
 	</ul>
 </div>
 <div id="main_content">
@@ -38,10 +39,12 @@
 		<% else %>
 			<p><%= link_to "News Feed", root_path%></p>
 		<% end%>
-		<div class="buttons">
-			<button class="button"><%= link_to "New Post", new_post_path%></button>
-			<button class="button">LogOut</button>
-		</div>
+		<% if user_signed_in? %>
+			<div class="buttons">
+				<button class="button"><%= link_to "New Post", new_post_path%></button>
+				<button class="button"><%= link_to "Logout", destroy_user_session_path %></button>
+			</div>
+		<% end%>
 	</div>
 	<% flash.each do |name, msg| %>
 		<%= content_tag(:div,msg,class: "alert")%>
