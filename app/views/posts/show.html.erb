@@ -9,4 +9,8 @@
 	<p class="body">
 		<%= @post.body %>
 	</p>
+	<div class="buttons">
+		<button class="button"><%=link_to "Edit", edit_post_path %></button>
+		<buttton class="button"><%= link_to "Delete", @post, method: :delete, confirm: "Are you Sure?" %></buttton>
+	</div>
 </div>
