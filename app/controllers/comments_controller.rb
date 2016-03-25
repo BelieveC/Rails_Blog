@@ -13,4 +13,5 @@ class CommentsController < ApplicationController
     	@comment.destroy
 
     	redirect_to @post
+    end
 end
