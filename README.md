@@ -1,4 +1,19 @@
-This is a Simple Blog Using Rails.....!
+My Rails Blog(https://github.com/BelieveC/Rails_Blog.git)
+===============
+
+Blog Features
+-------------
+-[Post](https://raw.githubusercontent.com/BelieveC/Rails_Blog/master/Blog_Preview_Images/newpost.png)
+-[Edit Post]( https://raw.githubusercontent.com/BelieveC/Rails_Blog/master/Blog_Preview_Images/edit.png)
+-[Edit Post]( https://raw.githubusercontent.com/BelieveC/Rails_Blog/master/Blog_Preview_Images/edit.png)
+-[Edit Post]( https://raw.githubusercontent.com/BelieveC/Rails_Blog/master/Blog_Preview_Images/edit.png)
+-[Edit Post]( https://raw.githubusercontent.com/BelieveC/Rails_Blog/master/Blog_Preview_Images/edit.png)
+
+
+
+
+
+
 
 This Blog have following Features:
 	
@@ -24,7 +39,7 @@ Edit => https://raw.githubusercontent.com/BelieveC/Rails_Blog/master/Blog_Previe
 
 Comment => https://raw.githubusercontent.com/BelieveC/Rails_Blog/master/Blog_Preview_Images/comment.png
 
-NewPost => https://raw.githubusercontent.com/BelieveC/Rails_Blog/master/Blog_Preview_Images/newpost.png
+NewPost => 
 
 Login => https://raw.githubusercontent.com/BelieveC/Rails_Blog/master/Blog_Preview_Images/login.png
 
