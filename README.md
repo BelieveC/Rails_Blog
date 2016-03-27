@@ -3,6 +3,7 @@
 
 Blog Features
 -------------
+
 *[Index View]( https://raw.githubusercontent.com/BelieveC/Rails_Blog/master/Blog_Preview_Images/BlogWithOutLogIn.png)
 *[Index View(Logged In)]( https://raw.githubusercontent.com/BelieveC/Rails_Blog/master/Blog_Preview_Images/BlogWithSignedIn.png)
 *[New Post](https://raw.githubusercontent.com/BelieveC/Rails_Blog/master/Blog_Preview_Images/newpost.png)
