@@ -4,7 +4,14 @@ source 'http://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
+group :production do
+	gem 'pg'
+end
+
+group :development do
+	gem 'sqlite3'
+end
 #User authen
 gem 'devise'
 # Use SCSS for stylesheets
