@@ -17,4 +17,4 @@ Blog Features
 ------------------------------------------------------------
 I hope you would love this Blog and Don't forget to share with your friends if you feel it is worth sharing.....Cheers!
 --------------------------------------------------------------
-For more Rails stuff,Follow me @[BelieveC](https://github.com/BelieveC)
+For more Rails stuff,Follow me [@BelieveC](https://github.com/BelieveC)
